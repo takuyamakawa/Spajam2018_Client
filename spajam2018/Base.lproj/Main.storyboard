@@ -27,7 +27,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Xub-QG-SwJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="mjt-Te-aHU"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="list" selectedImage="list" id="mjt-Te-aHU"/>
                     <connections>
                         <outlet property="dataList" destination="r3v-QU-vvH" id="wxj-PL-Jlu"/>
                     </connections>
@@ -44,14 +44,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-Ox-KAW">
-                                <rect key="frame" x="114" y="479" width="147" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="moveToDetail:" destination="xoj-5X-aHN" eventType="touchUpInside" id="72Q-27-8wZ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今回" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6h-ce-JLH">
                                 <rect key="frame" x="137" y="253" width="101" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,11 +58,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-Ox-KAW">
+                                <rect key="frame" x="26" y="485" width="323" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="start.png"/>
+                                <connections>
+                                    <action selector="moveToDetail:" destination="xoj-5X-aHN" eventType="touchUpInside" id="72Q-27-8wZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qby-U0-zG3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="N4J-pP-Rl0"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="main" selectedImage="main" id="N4J-pP-Rl0"/>
                     <connections>
                         <outlet property="measureBtn" destination="Y2L-Ox-KAW" id="VRq-w1-zoV"/>
                     </connections>
@@ -98,4 +98,9 @@
             <point key="canvasLocation" x="-164" y="-219"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list" width="25" height="25"/>
+        <image name="main" width="25" height="25"/>
+        <image name="start.png" width="564" height="93"/>
+    </resources>
 </document>

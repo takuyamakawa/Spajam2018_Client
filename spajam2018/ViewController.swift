@@ -27,12 +27,12 @@ class ViewController: UIViewController {
     
     @IBAction func moveToDetail(_ sender: Any) {
         
-        
         if flag == 0 {
-            measureBtn.setTitle("停止", for: .normal)
+            measureBtn.setImage(UIImage.init(named: "stop"), for: UIControlState.normal)
+            
             flag = 1
         } else {
-            measureBtn.setTitle("開始", for: .normal)
+            
             //"開始"をタップでアラート表示
             let alert: UIAlertController = UIAlertController(title: "結果はx回でした", message: "本当に終了しますか？", preferredStyle:  UIAlertControllerStyle.alert)
             
@@ -40,12 +40,19 @@ class ViewController: UIViewController {
                 // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("OK")
+                self.measureBtn.setImage(UIImage.init(named: "start"), for: UIControlState.normal)
+                self.flag = 0
+                
+                let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+                let nextView = storyboard.instantiateInitialViewController()
+                self.present(nextView!, animated: true, completion: nil)
             })
             
             let restartBtn = UIAlertAction(title: "再開", style: UIAlertActionStyle.cancel, handler:{
                 // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
                 print("Cancel")
+                
             })
             
             alert.addAction(saveBtn)
@@ -53,12 +60,8 @@ class ViewController: UIViewController {
             
             present(alert, animated: true, completion: nil)
             
-            flag = 0
         }
         
-        //        let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
-        //        let nextView = storyboard.instantiateInitialViewController()
-        //        present(nextView!, animated: true, completion: nil)
     }
     
 }
