@@ -7,99 +7,160 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CFC95828F8776E8361259128E2F62BA /* ReferenceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF564860B8E15E46E6DCAF33AF188CF7 /* ReferenceLines.swift */; };
+		1156FAC3757C8C6A55206DBFA719F502 /* DotDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620AC91B49FF4320B610BCE9BBB3302E /* DotDrawingLayer.swift */; };
+		12452651EE0DE267A0D68B180BE0A729 /* Pods-spajam2018-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7222E632B4A76C634B87B97883ECA9BE /* Pods-spajam2018-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C320192CEE840447BDAFB755E51E730 /* ScrollableGraphViewDrawingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE9A1C9AB21429F7251621566E264C8 /* ScrollableGraphViewDrawingDelegate.swift */; };
 		1F243C6A80EDF3FFCF24FCE3D1276076 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		20237AC99B94293A2B3A654517FD453F /* Pods-spajam2018UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2CF6618A61F97A04DBB5CF514E836 /* Pods-spajam2018UITests-dummy.m */; };
-		2BBED532C9735BA64D36B1870ED3058A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		513EBE702384FDE7FF2134D18582FEE3 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		416FE12DAA6C3B8708831A5F111B4F5C /* LinePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8101B2731EF4446710E5115DB13B17 /* LinePlot.swift */; };
+		42FAA008F6621D0D5FF614C0A32BF8B1 /* ScrollableGraphView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091BBEAE6F1EB042EDD8ECCAC7A6C84C /* ScrollableGraphView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E8E56A0FCA40C532B9D1B38832FBA6A /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97C2051633BB01620B39B12FCA6846 /* Plot.swift */; };
 		5971768D88830A3158D448A1BF17213B /* Pods-spajam2018Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 376E7DA4DAA3C1B574F5DBE7E7279472 /* Pods-spajam2018Tests-dummy.m */; };
+		5A958A1744BC7D141FF3B4ADB9163D04 /* GraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8C1E9E0C34ED8BBCBF0E468AA2F6B /* GraphPoint.swift */; };
 		5C57E56FBA87BDE0E539AE74130DDC30 /* Pods-spajam2018UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A683BA63D87FA9F146EC2066CA509CB /* Pods-spajam2018UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62F78A20691B77A48D70B4CDAD5ED47A /* GradientDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC515AAF49F58289C114D925ED5023B /* GradientDrawingLayer.swift */; };
 		6BADAFFDBB838D1B88D07EE8ACCC56D0 /* Pods-spajam2018Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B5281E64E3529602C5486DDC698238 /* Pods-spajam2018Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7ED6FA456CB61C009682DAC1C56D9365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		99439ECA2D282E6C311C88658C716567 /* Pods-spajam2018-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFC2FDA0B90AFACFCAB94F1A0A7C964 /* Pods-spajam2018-dummy.m */; };
-		ADF1A7BC10A2A65BE3990B8A7CBE239A /* Pods-spajam2018-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7222E632B4A76C634B87B97883ECA9BE /* Pods-spajam2018-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B99821E3644E76FC9315E039A0AB0823 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */; };
+		6DE1CB4517602C05994198B0839F7C08 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE689588E84EBB14BDBB1FC0070EAC84 /* ScrollableGraphView.swift */; };
+		77BB61183FB23118EA0D60029755A71E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		833E02832B73FE89E273753AE23A12D3 /* Pods-spajam2018-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFC2FDA0B90AFACFCAB94F1A0A7C964 /* Pods-spajam2018-dummy.m */; };
+		8434F86693E4889BA63331CDB4467F38 /* LineDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98197661D62A3DFAC9AA8D2BC51118F /* LineDrawingLayer.swift */; };
+		8D3F3103B0F78E035CDD7705C28F0F61 /* DotPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4AC46F4C5E6310ABB00A6223A8CF3F /* DotPlot.swift */; };
+		97C12B04F57E155915C0B08A6D839C80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A56703B7DF4F60B9A647BA71DD5F30E5 /* BarPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BEEF616968B0D446C00DB1D4719DEA /* BarPlot.swift */; };
+		AD75774D762973653C20F19ADC720994 /* ScrollableGraphView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 831E78F1F25F223FFF5B4C5B3B3E8F00 /* ScrollableGraphView-dummy.m */; };
+		B48E3DBFECFBA365E2304CD3BF349789 /* ScrollableGraphViewDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B805F3D8CF53B52659BEC394B2F886 /* ScrollableGraphViewDrawingLayer.swift */; };
+		BF41E77ACB32AC0450B48D875B719ED3 /* ScrollableGraphViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EB69E8264579B1C3687BC931A4748B /* ScrollableGraphViewDataSource.swift */; };
 		C752FC3990FBB79A07751ECE85EC6D31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E1D768D63D7618B78661FF9BF34FE6F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C823E1ECB62BE22CEBB48EFAD3DC1091 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229239E7823772AB060ED98FFA22847F /* SwiftyJSON.swift */; };
+		D156363DD46F8FEC828FE983FBD808A6 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E81EC60DE99E637B6C42C7D27F616D /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D542FA05A2B4FA84605744EDDE2758D1 /* ReferenceLineDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E63275226DBF5CD0FE6739BC5F50B /* ReferenceLineDrawingView.swift */; };
+		D863DC696467E3B51B1B16F639EE580A /* GraphPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609486A68AF4FF1EC45E0DCAF896D058 /* GraphPointAnimation.swift */; };
+		DAE6F2B47052A42285D319F2DE0E9A4A /* LabelPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F7DE2636637A5C7D975413E560B46 /* LabelPool.swift */; };
+		DF34BF3FA0CA879896C0254E962C43C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F37B23F7807CCEECFC5D0F0FE1E2873D /* FillDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BEEE23BDA04DE74B585E9B30C8CF7 /* FillDrawingLayer.swift */; };
+		F4C54064785B75F3AB5F2CFECFD4AA86 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 052197F36C16BEC5FA9130B0949EB591 /* SwiftyJSON-dummy.m */; };
+		FB57CC16D819798A8D455568AB03D40F /* BarDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73059E74E081070F55204238C63E64 /* BarDrawingLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD399C6027FF407B9DEE6D039564CEE2 /* PBXContainerItemProxy */ = {
+		3AA177286149E69BB346FA2351DC1BB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CFDE09361443B855AF109E99558B9077;
+			remoteGlobalIDString = EF2FFD2216F178D2E5C3876008212B3E;
+			remoteInfo = ScrollableGraphView;
+		};
+		90C4DBE9D407E63D0894D6D335A22C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A30A809287DCEFA2FB84EF4365AE989;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03FA223BC78FB638CB1CA3AA8D072FB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052197F36C16BEC5FA9130B0949EB591 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		0691EB3FD18624E9D09C981C36118477 /* Pods-spajam2018UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spajam2018UITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0759EB7E3BEF4ACACE70D66251B95145 /* Pods-spajam2018-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spajam2018-resources.sh"; sourceTree = "<group>"; };
+		091BBEAE6F1EB042EDD8ECCAC7A6C84C /* ScrollableGraphView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-umbrella.h"; sourceTree = "<group>"; };
 		0A683BA63D87FA9F146EC2066CA509CB /* Pods-spajam2018UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spajam2018UITests-umbrella.h"; sourceTree = "<group>"; };
 		140AF463E4E05BE6E0D98D5DA435CED3 /* Pods-spajam2018Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spajam2018Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1A20420B241ECA8E57F502BC6FFFDF3F /* Pods-spajam2018UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spajam2018UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1E838513D1B2385B115F4D0CA89A5FFD /* Pods_spajam2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spajam2018Tests.framework; path = "Pods-spajam2018Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C01A00CA9E556DC846106595C3A7F74 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		229239E7823772AB060ED98FFA22847F /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		24D76F80E85BA8B4724ECB9E81A36467 /* ScrollableGraphView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableGraphView.xcconfig; sourceTree = "<group>"; };
 		25C70C750A1E49E1F1960294E50965DC /* Pods-spajam2018Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spajam2018Tests-resources.sh"; sourceTree = "<group>"; };
+		2A4AC46F4C5E6310ABB00A6223A8CF3F /* DotPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotPlot.swift; path = Classes/Plots/DotPlot.swift; sourceTree = "<group>"; };
+		2CC106B9663023D097789A2763F1C767 /* ScrollableGraphView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollableGraphView.modulemap; sourceTree = "<group>"; };
 		3128F7609280659474537A04C8FFCF88 /* Pods-spajam2018-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spajam2018-acknowledgements.markdown"; sourceTree = "<group>"; };
 		376E7DA4DAA3C1B574F5DBE7E7279472 /* Pods-spajam2018Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spajam2018Tests-dummy.m"; sourceTree = "<group>"; };
+		3DC515AAF49F58289C114D925ED5023B /* GradientDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDrawingLayer.swift; path = Classes/Drawing/GradientDrawingLayer.swift; sourceTree = "<group>"; };
+		415EF814E073DB6887777E97AAE6CD14 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4476DB45C23F1015EE6AA0204CA22AAE /* Pods-spajam2018Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spajam2018Tests.release.xcconfig"; sourceTree = "<group>"; };
 		49AE0797F59BE6EE0454C1762A6C6D44 /* Pods-spajam2018UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spajam2018UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		57EE53DE8FADB7560567C31B8A5649CD /* Pods_spajam2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spajam2018UITests.framework; path = "Pods-spajam2018UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CFA7DE292A118859B79EB6FF81435D7 /* Pods-spajam2018Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spajam2018Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		609486A68AF4FF1EC45E0DCAF896D058 /* GraphPointAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPointAnimation.swift; path = Classes/Plots/Animation/GraphPointAnimation.swift; sourceTree = "<group>"; };
+		60F103465C61C6F88F2958E88EBBA446 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61B5281E64E3529602C5486DDC698238 /* Pods-spajam2018Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spajam2018Tests-umbrella.h"; sourceTree = "<group>"; };
+		620AC91B49FF4320B610BCE9BBB3302E /* DotDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotDrawingLayer.swift; path = Classes/Drawing/DotDrawingLayer.swift; sourceTree = "<group>"; };
 		6329C9CBD3DFF3DEEC5923E77DC05FFE /* Pods-spajam2018Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spajam2018Tests-frameworks.sh"; sourceTree = "<group>"; };
+		65E2A1B802540EE2371945131166AB6F /* Pods_spajam2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spajam2018Tests.framework; path = "Pods-spajam2018Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		69E2CF6618A61F97A04DBB5CF514E836 /* Pods-spajam2018UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spajam2018UITests-dummy.m"; sourceTree = "<group>"; };
 		6AE860C521102D717E13CA0E3D2152CA /* Pods-spajam2018UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spajam2018UITests-frameworks.sh"; sourceTree = "<group>"; };
-		6C80DF9328704A0751EECD9A04ACAC98 /* Pods_spajam2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spajam2018UITests.framework; path = "Pods-spajam2018UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CDDA0CF5C8417E7E9ED4A0A53A3A362 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7222E632B4A76C634B87B97883ECA9BE /* Pods-spajam2018-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spajam2018-umbrella.h"; sourceTree = "<group>"; };
+		7302FB5834CC347657E1E2AA0D43A908 /* ScrollableGraphView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollableGraphView.framework; path = ScrollableGraphView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B26D3E9A8CA7FA5860C35D3255CF7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76E81EC60DE99E637B6C42C7D27F616D /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		7D2F7DE2636637A5C7D975413E560B46 /* LabelPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelPool.swift; path = Classes/Reference/LabelPool.swift; sourceTree = "<group>"; };
 		8237FD3989EBF800103C514DD954650E /* Pods-spajam2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spajam2018.release.xcconfig"; sourceTree = "<group>"; };
-		83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		82BEEF616968B0D446C00DB1D4719DEA /* BarPlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPlot.swift; path = Classes/Plots/BarPlot.swift; sourceTree = "<group>"; };
+		831E78F1F25F223FFF5B4C5B3B3E8F00 /* ScrollableGraphView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableGraphView-dummy.m"; sourceTree = "<group>"; };
 		83CAF4C3CA19C842C6D6B77E08D8AF81 /* Pods-spajam2018-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spajam2018-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		941A30F4E7B0DA49BDFDF016B5F17148 /* Pods-spajam2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spajam2018.debug.xcconfig"; sourceTree = "<group>"; };
-		9F1246199B33BA25302A341281ECC0CC /* Pods_spajam2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spajam2018.framework; path = "Pods-spajam2018.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9585CDD12399FC20EF7CA7A7944A43 /* Pods_spajam2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spajam2018.framework; path = "Pods-spajam2018.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A028C6F6DDF83C5B8F04FC53AE265012 /* Pods-spajam2018-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spajam2018-frameworks.sh"; sourceTree = "<group>"; };
 		A69E527374FE75C362E195E7E1FF912C /* Pods-spajam2018Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spajam2018Tests.modulemap"; sourceTree = "<group>"; };
 		AA4C823C1EE26DE7C977BFDAD5DCE82C /* Pods-spajam2018Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spajam2018Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0E63275226DBF5CD0FE6739BC5F50B /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLineDrawingView.swift; path = Classes/Drawing/ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
+		AE97C2051633BB01620B39B12FCA6846 /* Plot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plot.swift; path = Classes/Plots/Plot.swift; sourceTree = "<group>"; };
+		B0EB69E8264579B1C3687BC931A4748B /* ScrollableGraphViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDataSource.swift; path = Classes/Protocols/ScrollableGraphViewDataSource.swift; sourceTree = "<group>"; };
+		B1B805F3D8CF53B52659BEC394B2F886 /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingLayer.swift; path = Classes/Drawing/ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
 		B35EDC44E1BD0EF2E3B94291BB716DF3 /* Pods-spajam2018UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spajam2018UITests.release.xcconfig"; sourceTree = "<group>"; };
 		B974642CDFBD9CCBB5AD7CF43CEFC278 /* Pods-spajam2018UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spajam2018UITests.modulemap"; sourceTree = "<group>"; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		B98197661D62A3DFAC9AA8D2BC51118F /* LineDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineDrawingLayer.swift; path = Classes/Drawing/LineDrawingLayer.swift; sourceTree = "<group>"; };
+		BBB8C1E9E0C34ED8BBCBF0E468AA2F6B /* GraphPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphPoint.swift; path = Classes/Plots/Animation/GraphPoint.swift; sourceTree = "<group>"; };
+		BF5BEEE23BDA04DE74B585E9B30C8CF7 /* FillDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillDrawingLayer.swift; path = Classes/Drawing/FillDrawingLayer.swift; sourceTree = "<group>"; };
 		C7F25D634432FF9161F1040711F6A68F /* Pods-spajam2018.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spajam2018.modulemap"; sourceTree = "<group>"; };
 		CBFC2FDA0B90AFACFCAB94F1A0A7C964 /* Pods-spajam2018-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spajam2018-dummy.m"; sourceTree = "<group>"; };
+		CE689588E84EBB14BDBB1FC0070EAC84 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphView.swift; path = Classes/ScrollableGraphView.swift; sourceTree = "<group>"; };
 		D1B6D6B77ACFA46315D71EC1014D29FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D21EF79A0DE4EDFC757EE852FE857C73 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		D6AB3899DEC07FBD69CB7FEA736A6E44 /* Pods-spajam2018UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spajam2018UITests-resources.sh"; sourceTree = "<group>"; };
+		D9AB9F1F0DD8B2DD57AF3CD872D35A18 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		DD8101B2731EF4446710E5115DB13B17 /* LinePlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinePlot.swift; path = Classes/Plots/LinePlot.swift; sourceTree = "<group>"; };
 		DFC3AA273189F7F150169193A1728568 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E45022699EDA438A046AD43BC3926B01 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		ECEA92E182BA77F227E4165B4260E0FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC73059E74E081070F55204238C63E64 /* BarDrawingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarDrawingLayer.swift; path = Classes/Drawing/BarDrawingLayer.swift; sourceTree = "<group>"; };
+		F80B5FA39AB61818C37CB535C4378D76 /* ScrollableGraphView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableGraphView-prefix.pch"; sourceTree = "<group>"; };
+		FD1DB2CA2F66B267BE7C66D7BFDFCFC5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		FEE9A1C9AB21429F7251621566E264C8 /* ScrollableGraphViewDrawingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableGraphViewDrawingDelegate.swift; path = Classes/Protocols/ScrollableGraphViewDrawingDelegate.swift; sourceTree = "<group>"; };
+		FF564860B8E15E46E6DCAF33AF188CF7 /* ReferenceLines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceLines.swift; path = Classes/Reference/ReferenceLines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4203112D72F8122FCF08F6A50EBAE2A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7ED6FA456CB61C009682DAC1C56D9365 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50196B24C5B27F7A892ACBE36F1FD6C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1D768D63D7618B78661FF9BF34FE6F8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		580BDFA63E77DE73E1E8678A5FC25623 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C752FC3990FBB79A07751ECE85EC6D31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E267DF1BE17FCA394C760D65B53A2F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C12B04F57E155915C0B08A6D839C80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C918103DBC142CF6377637022A69F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF34BF3FA0CA879896C0254E962C43C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6006281A178DEE002A0826AED3F23F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BB61183FB23118EA0D60029755A71E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +191,30 @@
 			);
 			name = "Pods-spajam2018";
 			path = "Target Support Files/Pods-spajam2018";
+			sourceTree = "<group>";
+		};
+		251F9960BC404009E339F6F3BD2C8064 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				229239E7823772AB060ED98FFA22847F /* SwiftyJSON.swift */,
+				29D3AB4762DE77F7EF7BE28909FB51C7 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		29D3AB4762DE77F7EF7BE28909FB51C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60F103465C61C6F88F2958E88EBBA446 /* Info.plist */,
+				FD1DB2CA2F66B267BE7C66D7BFDFCFC5 /* SwiftyJSON.modulemap */,
+				D9AB9F1F0DD8B2DD57AF3CD872D35A18 /* SwiftyJSON.xcconfig */,
+				052197F36C16BEC5FA9130B0949EB591 /* SwiftyJSON-dummy.m */,
+				1C01A00CA9E556DC846106595C3A7F74 /* SwiftyJSON-prefix.pch */,
+				76E81EC60DE99E637B6C42C7D27F616D /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		3D51A3660C16BA4C9ED88F5BB8206835 /* Pods-spajam2018UITests */ = {
@@ -168,14 +253,40 @@
 			path = "Target Support Files/Pods-spajam2018Tests";
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+		6062890B473E0B6AE4A9884D9023E4E4 /* ScrollableGraphView */ = {
 			isa = PBXGroup;
 			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				A82FB0ABA1BB1D08F4FA0D68E7D324CB /* Support Files */,
+				EC73059E74E081070F55204238C63E64 /* BarDrawingLayer.swift */,
+				82BEEF616968B0D446C00DB1D4719DEA /* BarPlot.swift */,
+				620AC91B49FF4320B610BCE9BBB3302E /* DotDrawingLayer.swift */,
+				2A4AC46F4C5E6310ABB00A6223A8CF3F /* DotPlot.swift */,
+				BF5BEEE23BDA04DE74B585E9B30C8CF7 /* FillDrawingLayer.swift */,
+				3DC515AAF49F58289C114D925ED5023B /* GradientDrawingLayer.swift */,
+				BBB8C1E9E0C34ED8BBCBF0E468AA2F6B /* GraphPoint.swift */,
+				609486A68AF4FF1EC45E0DCAF896D058 /* GraphPointAnimation.swift */,
+				7D2F7DE2636637A5C7D975413E560B46 /* LabelPool.swift */,
+				B98197661D62A3DFAC9AA8D2BC51118F /* LineDrawingLayer.swift */,
+				DD8101B2731EF4446710E5115DB13B17 /* LinePlot.swift */,
+				AE97C2051633BB01620B39B12FCA6846 /* Plot.swift */,
+				AD0E63275226DBF5CD0FE6739BC5F50B /* ReferenceLineDrawingView.swift */,
+				FF564860B8E15E46E6DCAF33AF188CF7 /* ReferenceLines.swift */,
+				CE689588E84EBB14BDBB1FC0070EAC84 /* ScrollableGraphView.swift */,
+				B0EB69E8264579B1C3687BC931A4748B /* ScrollableGraphViewDataSource.swift */,
+				FEE9A1C9AB21429F7251621566E264C8 /* ScrollableGraphViewDrawingDelegate.swift */,
+				B1B805F3D8CF53B52659BEC394B2F886 /* ScrollableGraphViewDrawingLayer.swift */,
+				833437DFA1C55A5E1E0320E4630B0D58 /* Support Files */,
 			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
+			name = ScrollableGraphView;
+			path = ScrollableGraphView;
+			sourceTree = "<group>";
+		};
+		7AC03D1EA09745405253ECD3EEFEE90E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6062890B473E0B6AE4A9884D9023E4E4 /* ScrollableGraphView */,
+				251F9960BC404009E339F6F3BD2C8064 /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -183,35 +294,24 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				971D427B735D918FB9672A28757BA28A /* Products */,
+				7AC03D1EA09745405253ECD3EEFEE90E /* Pods */,
+				BA2FEFAF44D7B236164A2EB1FDCC30CA /* Products */,
 				AF1CA98C729B8F4763A569764C42C667 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		971D427B735D918FB9672A28757BA28A /* Products */ = {
+		833437DFA1C55A5E1E0320E4630B0D58 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F1246199B33BA25302A341281ECC0CC /* Pods_spajam2018.framework */,
-				1E838513D1B2385B115F4D0CA89A5FFD /* Pods_spajam2018Tests.framework */,
-				6C80DF9328704A0751EECD9A04ACAC98 /* Pods_spajam2018UITests.framework */,
-				6CDDA0CF5C8417E7E9ED4A0A53A3A362 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A82FB0ABA1BB1D08F4FA0D68E7D324CB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ECEA92E182BA77F227E4165B4260E0FA /* Info.plist */,
-				E45022699EDA438A046AD43BC3926B01 /* SwiftyJSON.modulemap */,
-				83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */,
-				519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */,
-				D21EF79A0DE4EDFC757EE852FE857C73 /* SwiftyJSON-prefix.pch */,
-				D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */,
+				03FA223BC78FB638CB1CA3AA8D072FB5 /* Info.plist */,
+				2CC106B9663023D097789A2763F1C767 /* ScrollableGraphView.modulemap */,
+				24D76F80E85BA8B4724ECB9E81A36467 /* ScrollableGraphView.xcconfig */,
+				831E78F1F25F223FFF5B4C5B3B3E8F00 /* ScrollableGraphView-dummy.m */,
+				F80B5FA39AB61818C37CB535C4378D76 /* ScrollableGraphView-prefix.pch */,
+				091BBEAE6F1EB042EDD8ECCAC7A6C84C /* ScrollableGraphView-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			path = "../Target Support Files/ScrollableGraphView";
 			sourceTree = "<group>";
 		};
 		AF1CA98C729B8F4763A569764C42C667 /* Targets Support Files */ = {
@@ -224,20 +324,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		BA2FEFAF44D7B236164A2EB1FDCC30CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C9585CDD12399FC20EF7CA7A7944A43 /* Pods_spajam2018.framework */,
+				65E2A1B802540EE2371945131166AB6F /* Pods_spajam2018Tests.framework */,
+				57EE53DE8FADB7560567C31B8A5649CD /* Pods_spajam2018UITests.framework */,
+				7302FB5834CC347657E1E2AA0D43A908 /* ScrollableGraphView.framework */,
+				415EF814E073DB6887777E97AAE6CD14 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -251,6 +355,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4795128C7DD795A6E49037C76AD4A62F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12452651EE0DE267A0D68B180BE0A729 /* Pods-spajam2018-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A25D71539C0C15C6E014B7C7D445A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,19 +371,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E453661A0862F963788AC3928DF4AA93 /* Headers */ = {
+		D918852C1CD89A73B4193DF95F9FBFF0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513EBE702384FDE7FF2134D18582FEE3 /* SwiftyJSON-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDEA35BF3008AA71B83C0039A66CD94E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADF1A7BC10A2A65BE3990B8A7CBE239A /* Pods-spajam2018-umbrella.h in Headers */,
+				42FAA008F6621D0D5FF614C0A32BF8B1 /* ScrollableGraphView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +384,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BADAFFDBB838D1B88D07EE8ACCC56D0 /* Pods-spajam2018Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0B9D61D7946DF0F70D8CDEEE319AB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156363DD46F8FEC828FE983FBD808A6 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,25 +412,43 @@
 			);
 			name = "Pods-spajam2018Tests";
 			productName = "Pods-spajam2018Tests";
-			productReference = 1E838513D1B2385B115F4D0CA89A5FFD /* Pods_spajam2018Tests.framework */;
+			productReference = 65E2A1B802540EE2371945131166AB6F /* Pods_spajam2018Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		45E06F9765271CA4962B06AD1A652835 /* Pods-spajam2018 */ = {
+		58F9011BCE074D16EEAE0AACA2CE0BF2 /* Pods-spajam2018 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8F800F570B89662DD06CD425F8CC337 /* Build configuration list for PBXNativeTarget "Pods-spajam2018" */;
+			buildConfigurationList = 11F3C106C8B50F3E0FB62EAF300FD470 /* Build configuration list for PBXNativeTarget "Pods-spajam2018" */;
 			buildPhases = (
-				DE3CC44ACDC64297F2C2B60A6B51CBA7 /* Sources */,
-				50196B24C5B27F7A892ACBE36F1FD6C9 /* Frameworks */,
-				EDEA35BF3008AA71B83C0039A66CD94E /* Headers */,
+				938A7969AB84500E0B32CBAC7E5B707B /* Sources */,
+				D6006281A178DEE002A0826AED3F23F2 /* Frameworks */,
+				4795128C7DD795A6E49037C76AD4A62F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0663D4B90158E1FBD64F591ADD81FA6A /* PBXTargetDependency */,
+				EF6D11EB9BFE349FAC8CC6F6B1910E46 /* PBXTargetDependency */,
+				6E88E103A212962A69E1F0E7094BE27B /* PBXTargetDependency */,
 			);
 			name = "Pods-spajam2018";
 			productName = "Pods-spajam2018";
-			productReference = 9F1246199B33BA25302A341281ECC0CC /* Pods_spajam2018.framework */;
+			productReference = 9C9585CDD12399FC20EF7CA7A7944A43 /* Pods_spajam2018.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A30A809287DCEFA2FB84EF4365AE989 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE67D83D8EE70458D3F359D3971AFE48 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				715626CF233BDFBFE034DA2A1051A4F0 /* Sources */,
+				6E267DF1BE17FCA394C760D65B53A2F2 /* Frameworks */,
+				FE0B9D61D7946DF0F70D8CDEEE319AB5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 415EF814E073DB6887777E97AAE6CD14 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		91599452531546F96ABF39A2E931A1F3 /* Pods-spajam2018UITests */ = {
@@ -335,24 +465,24 @@
 			);
 			name = "Pods-spajam2018UITests";
 			productName = "Pods-spajam2018UITests";
-			productReference = 6C80DF9328704A0751EECD9A04ACAC98 /* Pods_spajam2018UITests.framework */;
+			productReference = 57EE53DE8FADB7560567C31B8A5649CD /* Pods_spajam2018UITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CFDE09361443B855AF109E99558B9077 /* SwiftyJSON */ = {
+		EF2FFD2216F178D2E5C3876008212B3E /* ScrollableGraphView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB1854A7E91849053B35B604490E5F6C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 51A13F2C3E9E9A9EAFA4593537C415A0 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */;
 			buildPhases = (
-				51231144C1B0B8E01CEC694D963555B8 /* Sources */,
-				4203112D72F8122FCF08F6A50EBAE2A5 /* Frameworks */,
-				E453661A0862F963788AC3928DF4AA93 /* Headers */,
+				8582A40A4507BED78BED242B20312A9C /* Sources */,
+				A5C918103DBC142CF6377637022A69F6 /* Frameworks */,
+				D918852C1CD89A73B4193DF95F9FBFF0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = 6CDDA0CF5C8417E7E9ED4A0A53A3A362 /* SwiftyJSON.framework */;
+			name = ScrollableGraphView;
+			productName = ScrollableGraphView;
+			productReference = 7302FB5834CC347657E1E2AA0D43A908 /* ScrollableGraphView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -372,25 +502,60 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 971D427B735D918FB9672A28757BA28A /* Products */;
+			productRefGroup = BA2FEFAF44D7B236164A2EB1FDCC30CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				45E06F9765271CA4962B06AD1A652835 /* Pods-spajam2018 */,
+				58F9011BCE074D16EEAE0AACA2CE0BF2 /* Pods-spajam2018 */,
 				17C2960478A4D560AFA1D7D9C1CB625A /* Pods-spajam2018Tests */,
 				91599452531546F96ABF39A2E931A1F3 /* Pods-spajam2018UITests */,
-				CFDE09361443B855AF109E99558B9077 /* SwiftyJSON */,
+				EF2FFD2216F178D2E5C3876008212B3E /* ScrollableGraphView */,
+				5A30A809287DCEFA2FB84EF4365AE989 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		51231144C1B0B8E01CEC694D963555B8 /* Sources */ = {
+		715626CF233BDFBFE034DA2A1051A4F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B99821E3644E76FC9315E039A0AB0823 /* SwiftyJSON-dummy.m in Sources */,
-				2BBED532C9735BA64D36B1870ED3058A /* SwiftyJSON.swift in Sources */,
+				F4C54064785B75F3AB5F2CFECFD4AA86 /* SwiftyJSON-dummy.m in Sources */,
+				C823E1ECB62BE22CEBB48EFAD3DC1091 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8582A40A4507BED78BED242B20312A9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB57CC16D819798A8D455568AB03D40F /* BarDrawingLayer.swift in Sources */,
+				A56703B7DF4F60B9A647BA71DD5F30E5 /* BarPlot.swift in Sources */,
+				1156FAC3757C8C6A55206DBFA719F502 /* DotDrawingLayer.swift in Sources */,
+				8D3F3103B0F78E035CDD7705C28F0F61 /* DotPlot.swift in Sources */,
+				F37B23F7807CCEECFC5D0F0FE1E2873D /* FillDrawingLayer.swift in Sources */,
+				62F78A20691B77A48D70B4CDAD5ED47A /* GradientDrawingLayer.swift in Sources */,
+				5A958A1744BC7D141FF3B4ADB9163D04 /* GraphPoint.swift in Sources */,
+				D863DC696467E3B51B1B16F639EE580A /* GraphPointAnimation.swift in Sources */,
+				DAE6F2B47052A42285D319F2DE0E9A4A /* LabelPool.swift in Sources */,
+				8434F86693E4889BA63331CDB4467F38 /* LineDrawingLayer.swift in Sources */,
+				416FE12DAA6C3B8708831A5F111B4F5C /* LinePlot.swift in Sources */,
+				4E8E56A0FCA40C532B9D1B38832FBA6A /* Plot.swift in Sources */,
+				D542FA05A2B4FA84605744EDDE2758D1 /* ReferenceLineDrawingView.swift in Sources */,
+				0CFC95828F8776E8361259128E2F62BA /* ReferenceLines.swift in Sources */,
+				AD75774D762973653C20F19ADC720994 /* ScrollableGraphView-dummy.m in Sources */,
+				6DE1CB4517602C05994198B0839F7C08 /* ScrollableGraphView.swift in Sources */,
+				BF41E77ACB32AC0450B48D875B719ED3 /* ScrollableGraphViewDataSource.swift in Sources */,
+				1C320192CEE840447BDAFB755E51E730 /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
+				B48E3DBFECFBA365E2304CD3BF349789 /* ScrollableGraphViewDrawingLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938A7969AB84500E0B32CBAC7E5B707B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833E02832B73FE89E273753AE23A12D3 /* Pods-spajam2018-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,14 +564,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20237AC99B94293A2B3A654517FD453F /* Pods-spajam2018UITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE3CC44ACDC64297F2C2B60A6B51CBA7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99439ECA2D282E6C311C88658C716567 /* Pods-spajam2018-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,15 +578,52 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0663D4B90158E1FBD64F591ADD81FA6A /* PBXTargetDependency */ = {
+		6E88E103A212962A69E1F0E7094BE27B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = CFDE09361443B855AF109E99558B9077 /* SwiftyJSON */;
-			targetProxy = CD399C6027FF407B9DEE6D039564CEE2 /* PBXContainerItemProxy */;
+			target = 5A30A809287DCEFA2FB84EF4365AE989 /* SwiftyJSON */;
+			targetProxy = 90C4DBE9D407E63D0894D6D335A22C78 /* PBXContainerItemProxy */;
+		};
+		EF6D11EB9BFE349FAC8CC6F6B1910E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollableGraphView;
+			target = EF2FFD2216F178D2E5C3876008212B3E /* ScrollableGraphView */;
+			targetProxy = 3AA177286149E69BB346FA2351DC1BB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0841A9BD2C194E78223493815201DFEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D76F80E85BA8B4724ECB9E81A36467 /* ScrollableGraphView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1A7FECCAEE73F9ACCECE39A2A0A07984 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4476DB45C23F1015EE6AA0204CA22AAE /* Pods-spajam2018Tests.release.xcconfig */;
@@ -457,38 +651,6 @@
 				PRODUCT_NAME = Pods_spajam2018Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		33891F14FA3D70000C7C3F2001B833A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -562,11 +724,10 @@
 			};
 			name = Debug;
 		};
-		8FD30B704A2966E510919B9C4D41B04D /* Debug */ = {
+		94A7E13CE68F15EDA2BEC7439B95AC3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 941A30F4E7B0DA49BDFDF016B5F17148 /* Pods-spajam2018.debug.xcconfig */;
+			baseConfigurationReference = D9AB9F1F0DD8B2DD57AF3CD872D35A18 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -576,21 +737,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-spajam2018/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-spajam2018/Pods-spajam2018.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_spajam2018;
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -752,7 +910,39 @@
 			};
 			name = Release;
 		};
-		D6126262B37C359169D1C737843CF3C0 /* Release */ = {
+		D57EA1376DCE5E0A12B7CCA2774AB5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D76F80E85BA8B4724ECB9E81A36467 /* ScrollableGraphView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollableGraphView/ScrollableGraphView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollableGraphView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollableGraphView/ScrollableGraphView.modulemap";
+				PRODUCT_NAME = ScrollableGraphView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB3ADA7253EFE305CC143C35164DDA3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8237FD3989EBF800103C514DD954650E /* Pods-spajam2018.release.xcconfig */;
 			buildSettings = {
@@ -787,9 +977,9 @@
 			};
 			name = Release;
 		};
-		E4E910D72EC46A8C5020510FD2D66911 /* Debug */ = {
+		DF223C3CF0AD9A04831837C25F6BAA22 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = D9AB9F1F0DD8B2DD57AF3CD872D35A18 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -810,8 +1000,44 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB695F89A3EFB97303A57BDFF574A4F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 941A30F4E7B0DA49BDFDF016B5F17148 /* Pods-spajam2018.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spajam2018/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spajam2018/Pods-spajam2018.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_spajam2018;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -821,11 +1047,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11F3C106C8B50F3E0FB62EAF300FD470 /* Build configuration list for PBXNativeTarget "Pods-spajam2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB695F89A3EFB97303A57BDFF574A4F1 /* Debug */,
+				DB3ADA7253EFE305CC143C35164DDA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B53EDD60891CA0A99618C4BA3DEEBB79 /* Debug */,
 				A20B0BDFC4838E55DCAD094ED2792393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51A13F2C3E9E9A9EAFA4593537C415A0 /* Build configuration list for PBXNativeTarget "ScrollableGraphView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0841A9BD2C194E78223493815201DFEF /* Debug */,
+				D57EA1376DCE5E0A12B7CCA2774AB5CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -839,29 +1083,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AE67D83D8EE70458D3F359D3971AFE48 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A7E13CE68F15EDA2BEC7439B95AC3B /* Debug */,
+				DF223C3CF0AD9A04831837C25F6BAA22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C8FCB33ABA27CA78C3E67DE6C2EB2D3F /* Build configuration list for PBXNativeTarget "Pods-spajam2018UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				379A4C37B57D41F8ADBEA9F4C8A735E0 /* Debug */,
 				C189E745397C4ED89130B710E9038A01 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB1854A7E91849053B35B604490E5F6C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4E910D72EC46A8C5020510FD2D66911 /* Debug */,
-				33891F14FA3D70000C7C3F2001B833A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E8F800F570B89662DD06CD425F8CC337 /* Build configuration list for PBXNativeTarget "Pods-spajam2018" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8FD30B704A2966E510919B9C4D41B04D /* Debug */,
-				D6126262B37C359169D1C737843CF3C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

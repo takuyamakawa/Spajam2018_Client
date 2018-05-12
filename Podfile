@@ -7,6 +7,7 @@ target 'spajam2018' do
 
   # Pods for spajam2018
   pod 'SwiftyJSON'
+  pod 'ScrollableGraphView'
 
   target 'spajam2018Tests' do
     inherit! :search_paths
