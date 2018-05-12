@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0039E684098AD64FE7E867AD /* Pods_spajam2018UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D0277797695CE32968D929 /* Pods_spajam2018UITests.framework */; };
 		0F168FEB7956958DA10DF85F /* Pods_spajam2018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FB28ECF23EDD6501324CDC /* Pods_spajam2018Tests.framework */; };
+		3B31141720A6FE690030A2CE /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B31141620A6FE690030A2CE /* List.swift */; };
+		3B31141A20A6FF3B0030A2CE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B31141820A6FF3B0030A2CE /* CustomTableViewCell.swift */; };
+		3B31141B20A6FF3B0030A2CE /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B31141920A6FF3B0030A2CE /* CustomTableViewCell.xib */; };
+		3B9A1C1F20A727A400A60361 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9A1C1E20A727A400A60361 /* Detail.storyboard */; };
+		3B9A1C2120A727B700A60361 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A1C2020A727B700A60361 /* Detail.swift */; };
 		3BEFD3E920A1B59C000B0AA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEFD3E820A1B59C000B0AA7 /* AppDelegate.swift */; };
 		3BEFD3EB20A1B59C000B0AA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEFD3EA20A1B59C000B0AA7 /* ViewController.swift */; };
 		3BEFD3EE20A1B59C000B0AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEFD3EC20A1B59C000B0AA7 /* Main.storyboard */; };
@@ -40,6 +45,11 @@
 /* Begin PBXFileReference section */
 		01D54F33CFB75846481F6FA7 /* Pods-spajam2018UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spajam2018UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spajam2018UITests/Pods-spajam2018UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		36FB28ECF23EDD6501324CDC /* Pods_spajam2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spajam2018Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B31141620A6FE690030A2CE /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		3B31141820A6FF3B0030A2CE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		3B31141920A6FF3B0030A2CE /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		3B9A1C1E20A727A400A60361 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		3B9A1C2020A727B700A60361 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		3BEFD3E520A1B59C000B0AA7 /* spajam2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spajam2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEFD3E820A1B59C000B0AA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEFD3EA20A1B59C000B0AA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +129,11 @@
 				3BEFD3E820A1B59C000B0AA7 /* AppDelegate.swift */,
 				3BEFD3EA20A1B59C000B0AA7 /* ViewController.swift */,
 				3BEFD3EC20A1B59C000B0AA7 /* Main.storyboard */,
+				3B9A1C1E20A727A400A60361 /* Detail.storyboard */,
+				3B9A1C2020A727B700A60361 /* Detail.swift */,
+				3B31141620A6FE690030A2CE /* List.swift */,
+				3B31141820A6FF3B0030A2CE /* CustomTableViewCell.swift */,
+				3B31141920A6FF3B0030A2CE /* CustomTableViewCell.xib */,
 				3BEFD3F220A1B59F000B0AA7 /* Assets.xcassets */,
 				3BEFD3F420A1B59F000B0AA7 /* LaunchScreen.storyboard */,
 				3BEFD3F720A1B59F000B0AA7 /* Info.plist */,
@@ -283,6 +298,8 @@
 			files = (
 				3BEFD3F620A1B59F000B0AA7 /* LaunchScreen.storyboard in Resources */,
 				3BEFD3F320A1B59F000B0AA7 /* Assets.xcassets in Resources */,
+				3B31141B20A6FF3B0030A2CE /* CustomTableViewCell.xib in Resources */,
+				3B9A1C1F20A727A400A60361 /* Detail.storyboard in Resources */,
 				3BEFD3EE20A1B59C000B0AA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +478,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BEFD3EB20A1B59C000B0AA7 /* ViewController.swift in Sources */,
+				3B31141A20A6FF3B0030A2CE /* CustomTableViewCell.swift in Sources */,
+				3B9A1C2120A727B700A60361 /* Detail.swift in Sources */,
+				3B31141720A6FE690030A2CE /* List.swift in Sources */,
 				3BEFD3E920A1B59C000B0AA7 /* AppDelegate.swift in Sources */,
 				3BEFD3F120A1B59C000B0AA7 /* spajam2018.xcdatamodeld in Sources */,
 			);
@@ -639,7 +659,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W722UE7AL;
 				INFOPLIST_FILE = spajam2018/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yama.spajam2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -655,7 +678,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W722UE7AL;
 				INFOPLIST_FILE = spajam2018/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yama.spajam2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -672,7 +698,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W722UE7AL;
 				INFOPLIST_FILE = spajam2018Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yama.spajam2018Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -690,7 +720,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W722UE7AL;
 				INFOPLIST_FILE = spajam2018Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yama.spajam2018Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -707,7 +741,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W722UE7AL;
 				INFOPLIST_FILE = spajam2018UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yama.spajam2018UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -724,7 +762,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W722UE7AL;
 				INFOPLIST_FILE = spajam2018UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yama.spajam2018UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
