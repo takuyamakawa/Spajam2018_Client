@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     
     @IBAction func moveToDetail(_ sender: Any) {
         
-        
         if flag == 0 {
             measureBtn.setImage(UIImage.init(named: "stop"), for: UIControlState.normal)
             
@@ -43,6 +42,10 @@ class ViewController: UIViewController {
                 print("OK")
                 self.measureBtn.setImage(UIImage.init(named: "start"), for: UIControlState.normal)
                 self.flag = 0
+                
+                let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+                let nextView = storyboard.instantiateInitialViewController()
+                self.present(nextView!, animated: true, completion: nil)
             })
             
             let restartBtn = UIAlertAction(title: "再開", style: UIAlertActionStyle.cancel, handler:{
@@ -57,12 +60,8 @@ class ViewController: UIViewController {
             
             present(alert, animated: true, completion: nil)
             
-            
         }
         
-        //        let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
-        //        let nextView = storyboard.instantiateInitialViewController()
-        //        present(nextView!, animated: true, completion: nil)
     }
     
 }
