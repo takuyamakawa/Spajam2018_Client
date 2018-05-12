@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class List: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -15,15 +17,19 @@ class List: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let urlStr = "https://kentaiwami.jp/spajam2018/api/"
     var data = ["a","b", "c", "d","e"]
     var res = ["aaa", "aaa", "bbb", "ccc", "ddd"]
+     var articles: [[String: String?]] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        callAPI(name: "asd")
-        
         dataList.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
         
+        dataList.frame = view.frame
+        view.addSubview(dataList)
         dataList.delegate = self
         dataList.dataSource = self
+        
+        callAPI(name: "asd")
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,7 +39,7 @@ class List: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     /* リストの表示数を定義 */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return articles.count
     }
     
     /* リスト一つ一つに写真やタイトルを配置する定義 */
@@ -42,8 +48,13 @@ class List: UIViewController, UITableViewDelegate, UITableViewDataSource {
         /* セルの作成 */
         let cell = dataList.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
         
-        cell.dataLabel.text = data[indexPath.row]
-        cell.resultNumber.text = res[indexPath.row]
+        if !articles.isEmpty {
+            let article = articles[indexPath.row]
+            cell.dataLabel.text = article["date"]!
+            cell.resultNumber.text = article["count"]!
+        }
+        
+        
         
         return cell
     }
@@ -69,45 +80,28 @@ class List: UIViewController, UITableViewDelegate, UITableViewDataSource {
     public func callAPI(name: String){
         
         let APIUrl = urlStr + "walk/list?user_id=1"
-        let request = NSMutableURLRequest(url: NSURL(string: APIUrl)! as URL)
         
-        // set the method(HTTP-GET)
+        var request = URLRequest(url: URL(string: APIUrl)!)
         request.httpMethod = "GET"
         
-        // use NSURLSessionDataTask
-        let task = URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
-            if (error == nil) {
-                let result = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
-                //print(result)
+        Alamofire.request(request as URLRequestConvertible)
+            .responseJSON { response in
                 
-                self.convert(result: result)
-                
-            } else {
-                print("error")
-            }
-        })
-        task.resume()
-        
-        //let jsonObj = try JSONSerialization.jsonObject(with: results, options: []) as! Dictionary<String, Any>
-        //let results = jsonObj["results"] as! Dictionary<String, Any>!
-        
-    }
-    
-    private func convert(result: NSString) {
-        if let data = result.data(using: String.Encoding.utf8.rawValue) {
-            do {
-                let JSONObject = try JSONSerialization.jsonObject(with: data, options: [])
-                let hoge = JSONObject as! NSDictionary
-                let hoge2 = hoge["results"] as! NSArray
-                
-                for hhh in hoge2 {
-                    print(hhh)
+                guard let object = response.result.value else {
+                    return
                 }
-            } catch let error {
-                print(error)
-            }
-        } else {
-            print("Invalid string")
+                
+                let json = JSON(object)
+                let jsonarr = json["results"].arrayValue
+                jsonarr.forEach { (json) in
+                    let article: [String: String?] = [
+                        "date": json["date"].string,
+                        "count": json["count"].string
+                    ]
+                    self.articles.append(article)
+                }
+                print(self.articles)
+                self.dataList.reloadData()
         }
     }
 }
