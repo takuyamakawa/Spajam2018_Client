@@ -50,16 +50,15 @@ class List: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
     }
-
     
     /* セルがタップされた時の処理 */
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("タップされたセルのindex番号: \(indexPath.row)")
         
-//        appDelegate.area_name = areanames[indexPath.row]
-//
-//        let storyboard: UIStoryboard = UIStoryboard(name: "SelectSpots", bundle: nil)
-//        let next: UIViewController = storyboard.instantiateInitialViewController()!
-//        present(next, animated: true, completion: nil)
+        //        appDelegate.area_name = areanames[indexPath.row]
+        //
+        let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+        let next: UIViewController = storyboard.instantiateInitialViewController()!
+        present(next, animated: true, completion: nil)
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var flag = 0
     @IBOutlet weak var measureBtn: UIButton!
     
@@ -19,18 +19,18 @@ class ViewController: UIViewController {
         measureBtn.setTitle("開始", for: .normal)
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func moveToDetail(_ sender: Any) {
         
         
         if flag == 0 {
             measureBtn.setTitle("停止", for: .normal)
-          flag = 1
+            flag = 1
         } else {
             measureBtn.setTitle("開始", for: .normal)
             //"開始"をタップでアラート表示
@@ -56,9 +56,9 @@ class ViewController: UIViewController {
             flag = 0
         }
         
-//        let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
-//        let nextView = storyboard.instantiateInitialViewController()
-//        present(nextView!, animated: true, completion: nil)
+        //        let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+        //        let nextView = storyboard.instantiateInitialViewController()
+        //        present(nextView!, animated: true, completion: nil)
     }
     
 }
