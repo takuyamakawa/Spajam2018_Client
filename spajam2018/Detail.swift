@@ -93,7 +93,7 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
         })
         task.resume()*/
         
-        // create the url-request GET
+        // create the url-request PUT
         let APIUrl = urlStr + "walk"
         let myUrl:NSURL = NSURL(string: APIUrl)!
         
