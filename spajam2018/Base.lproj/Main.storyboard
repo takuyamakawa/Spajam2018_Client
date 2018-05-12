@@ -27,7 +27,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Xub-QG-SwJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="mjt-Te-aHU"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="list" selectedImage="list" id="mjt-Te-aHU"/>
                     <connections>
                         <outlet property="dataList" destination="r3v-QU-vvH" id="wxj-PL-Jlu"/>
                     </connections>
@@ -70,7 +70,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qby-U0-zG3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="N4J-pP-Rl0"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="main" selectedImage="main" id="N4J-pP-Rl0"/>
                     <connections>
                         <outlet property="measureBtn" destination="Y2L-Ox-KAW" id="VRq-w1-zoV"/>
                     </connections>
@@ -98,4 +98,8 @@
             <point key="canvasLocation" x="-164" y="-219"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list" width="25" height="25"/>
+        <image name="main" width="25" height="25"/>
+    </resources>
 </document>
