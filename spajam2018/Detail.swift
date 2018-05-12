@@ -11,7 +11,7 @@ import ScrollableGraphView
 
 class Detail: UIViewController, ScrollableGraphViewDataSource{
     
-    
+    let urlStr = "https://kentaiwami.jp/spajam2018/api/"
     let data: [Double] = [40, 8, 15, 80, 23, 42, 50, 51, 70]
     
     let linePlot = LinePlot(identifier: "line") // Identifier should be unique for each plot.
@@ -20,6 +20,8 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        callAPI(name: "asd")
         
         let graphView = ScrollableGraphView(frame: CGRect(x: 0, y: 70, width: self.view.frame.width, height: 350), dataSource:self)
         
@@ -69,6 +71,56 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
     
     func numberOfPoints() -> Int {
         return data.count
+    }
+    
+    public func callAPI(name: String){
+        
+        // create the url-request GET
+        /*let APIUrl = urlStr + "walk/prevwalk?user_id=1"
+        let request = NSMutableURLRequest(url: NSURL(string: APIUrl)! as URL)
+        
+        // set the method(HTTP-GET)
+        request.httpMethod = "GET"
+        
+        // use NSURLSessionDataTask
+        let task = URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
+            if (error == nil) {
+                let result = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
+                print(result)
+            } else {
+                print("error")
+            }
+        })
+        task.resume()*/
+        
+        // create the url-request PUT
+        let APIUrl = urlStr + "walk"
+        let myUrl:NSURL = NSURL(string: APIUrl)!
+        
+        //let _:Data = try! Data(contentsOf:myUrl as URL)
+        let params:[String:Any] = ["walk_id": 5]
+        
+        let request = NSMutableURLRequest(url: myUrl as URL)
+        request.httpMethod = "PUT"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try! JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions(rawValue: 0))
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest){ data, response, error in
+            if let data = data, let response = response {
+                print(response)
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
+                    print(json)
+                } catch {
+                    print("Serialize Error")
+                }
+            } else {
+                print(error ?? "Error")
+            }
+        }
+        task.resume()
+        
+        
     }
     
     @IBAction func back(_ sender: Any) {
