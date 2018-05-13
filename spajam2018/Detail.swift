@@ -78,9 +78,13 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
    
     public func callAPI(name: String){
         
+        var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+
+        print("HOHOHOHOHOHOHO")
+        print(appDelegate.list_id)
         
         // create the url-request PUT
-        let APIUrl = urlStr + "walk/list/8?user_id=1"
+        let APIUrl = urlStr + "walk/list/" + String(appDelegate.list_id!) + "?user_id=1"
         
         var request = URLRequest(url: URL(string: APIUrl)!)
         request.httpMethod = "GET"

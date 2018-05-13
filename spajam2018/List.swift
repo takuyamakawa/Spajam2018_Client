@@ -74,16 +74,20 @@ class List: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("タップされたセルのindex番号: \(indexPath.row)")
         
+        var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.list_id = id[indexPath.row]
+        
         //        appDelegate.area_name = areanames[indexPath.row]
         //
         let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
         let next: UIViewController = storyboard.instantiateInitialViewController()!
         present(next, animated: true, completion: nil)
         
-        select_id = id[indexPath.row]
+//        select_id = id[indexPath.row]
         
         
-        //performSegue(withIdentifier: "showSecondView",sender: nil)
+        
+//        performSegue(withIdentifier: "showSecondView",sender: nil)
     }
     
     // Segueで遷移時の処理
