@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let lastdata = "13"
+        let lastdata = "3"
         lastcount.font = UIFont.systemFont(ofSize: 28)
         lastcount.text = "前回：" + lastdata + "回"
         lastcount.textAlignment = NSTextAlignment.center
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
         } else {
             
             //"開始"をタップでアラート表示
-            let alert: UIAlertController = UIAlertController(title: "結果はx回でした", message: "本当に終了しますか？", preferredStyle:  UIAlertControllerStyle.alert)
+            let alert: UIAlertController = UIAlertController(title: "本当に終了しますか？", message: "", preferredStyle:  UIAlertControllerStyle.alert)
             
             let saveBtn: UIAlertAction = UIAlertAction(title: "保存", style: UIAlertActionStyle.default, handler:{
                 // ボタンが押された時の処理を書く（クロージャ実装）

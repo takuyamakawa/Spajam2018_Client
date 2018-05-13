@@ -38,7 +38,7 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
         }*/
         
         
-        graphView = ScrollableGraphView(frame: CGRect(x: 0, y: 70, width: self.view.frame.width, height: 350), dataSource:self)
+        graphView = ScrollableGraphView(frame: CGRect(x: 0, y: 70, width: self.view.frame.width, height: 430), dataSource:self)
         
         //graphView.shouldAnimateOnAdapt = false
         //graphView.shouldAnimateOnStartup = false
