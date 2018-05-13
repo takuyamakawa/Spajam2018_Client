@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                 userInfo: nil,                                        //オブジェクトに付けて送信する値
                 repeats: true)
             
-            let APIUrl = urlStr + "/api/walk"
+            let APIUrl = urlStr + "walk"
             
             //var request = URLRequest(url: URL(string: APIUrl)!)
             //request.httpMethod = "POST"
@@ -66,11 +66,13 @@ class ViewController: UIViewController {
                 .responseJSON { response in
                     
                     guard let object = response.result.value else {
+                        print(response.result.value)
                         return
                     }
                     
                     let json = JSON(object)
                     print(json)
+                    print("hello")
             }
             flag = 1
         } else {
