@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
+    
+    var timer: Timer?
+    
+    let urlStr = "https://kentaiwami.jp/spajam2018/api/"
+    let param:[String:Int] = ["user_id": 1]
+    let put_param:[String:Int] = ["walk_id": 10]
     
     var flag = 0
     @IBOutlet weak var measureBtn: UIButton!
@@ -43,7 +51,27 @@ class ViewController: UIViewController {
         if flag == 0 {
             measureBtn.setImage(UIImage.init(named: "stop"), for: UIControlState.normal)
             nowcount.text = "計測中"
+            self.timer = Timer.scheduledTimer(timeInterval: 1,                                         //ループなら間隔 1度きりなら発動までの秒数
+                target: self,                                         //メソッドを持つオブジェクト
+                selector: #selector(ViewController.timerUpdate),  //実行するメソッド
+                userInfo: nil,                                        //オブジェクトに付けて送信する値
+                repeats: true)
             
+            let APIUrl = urlStr + "/api/walk"
+            
+            //var request = URLRequest(url: URL(string: APIUrl)!)
+            //request.httpMethod = "POST"
+            
+           Alamofire.request(APIUrl, method: .post, parameters: param, encoding: JSONEncoding(options: []))
+                .responseJSON { response in
+                    
+                    guard let object = response.result.value else {
+                        return
+                    }
+                    
+                    let json = JSON(object)
+                    print(json)
+            }
             flag = 1
         } else {
             
@@ -56,6 +84,24 @@ class ViewController: UIViewController {
                 print("OK")
                 self.measureBtn.setImage(UIImage.init(named: "start"), for: UIControlState.normal)
                 self.flag = 0
+                
+                self.timer?.invalidate()
+                
+                let APIUrl = self.urlStr + "walk"
+                
+                //var request = URLRequest(url: URL(string: APIUrl)!)
+                //request.httpMethod = "GET"
+                
+                Alamofire.request(APIUrl, method: .put, parameters: self.put_param, encoding: JSONEncoding(options: []))
+                    .responseJSON { response in
+                        
+                        guard let object = response.result.value else {
+                            return
+                        }
+                        
+                        let json = JSON(object)
+                        print(json)
+                }
                 
                 let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
                 let nextView = storyboard.instantiateInitialViewController()
@@ -76,6 +122,25 @@ class ViewController: UIViewController {
             
         }
         
+    }
+    
+    @objc func timerUpdate() {
+       // print("update")
+        let APIUrl = urlStr + "walk/now?user_id=1"
+        
+        //var request = URLRequest(url: URL(string: APIUrl)!)
+        //request.httpMethod = "GET"
+        
+        Alamofire.request(APIUrl, method: .get, encoding: JSONEncoding(options: []))
+            .responseJSON { response in
+                
+                guard let object = response.result.value else {
+                    return
+                }
+                
+                let json = JSON(object)
+                //print(json)
+    }
     }
     
 }
