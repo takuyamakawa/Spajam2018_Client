@@ -8,22 +8,37 @@
 
 import UIKit
 import ScrollableGraphView
+import Alamofire
+import SwiftyJSON
 
 class Detail: UIViewController, ScrollableGraphViewDataSource{
     
+    var id: Int = 0
+    
     let urlStr = "https://kentaiwami.jp/spajam2018/api/"
     let data: [Double] = [40, 8, 15, 80, 23, 42, 50, 51, 70]
+    var time_data:[String] = []
+    var count_data:[Int] = []
+    
+    var time_articles: [[String: String?]] = []
+    var count_articles: [[String: Int]] = []
     
     let linePlot = LinePlot(identifier: "line") // Identifier should be unique for each plot.
     let referenceLines = ReferenceLines()
-    
+    var graphView = ScrollableGraphView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         callAPI(name: "asd")
         
-        let graphView = ScrollableGraphView(frame: CGRect(x: 0, y: 70, width: self.view.frame.width, height: 350), dataSource:self)
+        /*if !count_articles.isEmpty {
+            let article = articles[indexPath.row]
+            count_data = count_article["count"]!
+        }*/
+        
+        
+        graphView = ScrollableGraphView(frame: CGRect(x: 0, y: 70, width: self.view.frame.width, height: 350), dataSource:self)
         
         //graphView.shouldAnimateOnAdapt = false
         //graphView.shouldAnimateOnStartup = false
@@ -38,6 +53,7 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
         referenceLines.referenceLineColor = UIColor.init(red: 124/255, green: 185/255, blue: 50/255, alpha: 70/100)
         referenceLines.referenceLineLabelColor = UIColor.init(red: 124/255, green: 185/255, blue: 50/255, alpha: 70/100)
         referenceLines.dataPointLabelColor = UIColor.init(red: 124/255, green: 185/255, blue: 50/255, alpha: 70/100)
+        referenceLines.includeMinMax = false
         
         //graphView.backgroundColor = UIColor.red
         graphView.backgroundFillColor = UIColor.init(red: 153/255, green: 153/255, blue: 153/255, alpha: 10/100)
@@ -47,7 +63,11 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
         graphView.addPlot(plot: linePlot)
         graphView.addReferenceLines(referenceLines: referenceLines)
         
-        self.view.addSubview(graphView)
+        graphView.rangeMax = 30
+        graphView.rangeMin = 0
+        
+        print(id)
+        //self.view.addSubview(graphView)
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,73 +75,74 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
         // Dispose of any resources that can be recreated.
     }
     
+   
+    public func callAPI(name: String){
+        
+        
+        // create the url-request PUT
+        let APIUrl = urlStr + "walk/list/8?user_id=1"
+        
+        var request = URLRequest(url: URL(string: APIUrl)!)
+        request.httpMethod = "GET"
+        
+        Alamofire.request(request as URLRequestConvertible)
+            .responseJSON { response in
+                
+                guard let object = response.result.value else {
+                    return
+                }
+                
+                let json = JSON(object)
+                let jsonarr = json["results"].arrayValue
+                jsonarr.forEach { (json) in
+                    let article: [String: String?] = [
+                        "time": json["time"].string
+                    ]
+                    self.time_articles.append(article)
+                    
+                    let article2: [String: Int?] = [
+                        "count": json["count"].int
+                    ]
+                    self.count_articles.append(article2 as! [String : Int])
+                }
+                
+                for i in 0..<self.time_articles.count {
+                    let article = self.time_articles[i]["time"]
+                    self.time_data.append(article!!)
+                    //print(self.time_data[i])
+                }
+                
+                for i in 0..<self.count_articles.count {
+                    let article = self.count_articles[i]["count"]
+                    self.count_data.append(article!)
+                    //print(self.count_data[i])
+                }
+                
+                self.view.addSubview(self.graphView)
+        }
+        
+        
+        
+    }
+    
     func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
         // Return the data for each plot.
         switch(plot.identifier) {
         case "line":
-            return data[pointIndex]
+            return Double(count_data[pointIndex])
         default:
             return 0
         }
     }
     
     func label(atIndex pointIndex: Int) -> String {
-        return "FEB \(pointIndex)"
+        return time_data[pointIndex]
     }
     
     func numberOfPoints() -> Int {
-        return data.count
+        return count_data.count
     }
     
-    public func callAPI(name: String){
-        
-        // create the url-request GET
-        /*let APIUrl = urlStr + "walk/prevwalk?user_id=1"
-        let request = NSMutableURLRequest(url: NSURL(string: APIUrl)! as URL)
-        
-        // set the method(HTTP-GET)
-        request.httpMethod = "GET"
-        
-        // use NSURLSessionDataTask
-        let task = URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
-            if (error == nil) {
-                let result = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
-                print(result)
-            } else {
-                print("error")
-            }
-        })
-        task.resume()*/
-        
-        // create the url-request PUT
-        let APIUrl = urlStr + "walk"
-        let myUrl:NSURL = NSURL(string: APIUrl)!
-        
-        //let _:Data = try! Data(contentsOf:myUrl as URL)
-        let params:[String:Any] = ["walk_id": 5]
-        
-        let request = NSMutableURLRequest(url: myUrl as URL)
-        request.httpMethod = "PUT"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try! JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions(rawValue: 0))
-        
-        let task = URLSession.shared.dataTask(with: request as URLRequest){ data, response, error in
-            if let data = data, let response = response {
-                print(response)
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(json)
-                } catch {
-                    print("Serialize Error")
-                }
-            } else {
-                print(error ?? "Error")
-            }
-        }
-        task.resume()
-        
-        
-    }
     
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
