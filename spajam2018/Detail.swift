@@ -83,6 +83,12 @@ class Detail: UIViewController, ScrollableGraphViewDataSource{
         print("HOHOHOHOHOHOHO")
         print(appDelegate.list_id)
         
+        if((appDelegate.list_id) != nil){
+            appDelegate.list_id=appDelegate.list_id!+0
+        }else{
+            appDelegate.list_id=30
+        }
+        
         // create the url-request PUT
         let APIUrl = urlStr + "walk/list/" + String(appDelegate.list_id!) + "?user_id=1"
         
