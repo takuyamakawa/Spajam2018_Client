@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     let urlStr = "https://kentaiwami.jp/spajam2018/api/"
     let param:[String:Int] = ["user_id": 1]
-    let put_param:[String:Int] = ["walk_id": 10]
+    var put_param:[String:Int] = [:]
+    
     
     var flag = 0
     @IBOutlet weak var measureBtn: UIButton!
@@ -61,18 +62,18 @@ class ViewController: UIViewController {
             
             //var request = URLRequest(url: URL(string: APIUrl)!)
             //request.httpMethod = "POST"
-            
-           Alamofire.request(APIUrl, method: .post, parameters: param, encoding: JSONEncoding(options: []))
+            Alamofire.request(APIUrl, method: .post, parameters: param, encoding: JSONEncoding(options: []))
                 .responseJSON { response in
-                    
                     guard let object = response.result.value else {
-                        print(response.result.value)
                         return
                     }
                     
                     let json = JSON(object)
-                    print(json)
-                    print("hello")
+                    
+                    
+                    let article: [String: Int] = ["walk_id": json["walk_id"].intValue]
+                    self.put_param = article
+//                    print(self.put_param)
             }
             flag = 1
         } else {
@@ -87,6 +88,9 @@ class ViewController: UIViewController {
                 self.measureBtn.setImage(UIImage.init(named: "start"), for: UIControlState.normal)
                 self.flag = 0
                 
+                print("UUUUUUUUUUUU")
+                print(self.flag)
+                
                 self.timer?.invalidate()
                 
                 let APIUrl = self.urlStr + "walk"
@@ -94,9 +98,13 @@ class ViewController: UIViewController {
                 //var request = URLRequest(url: URL(string: APIUrl)!)
                 //request.httpMethod = "GET"
                 
+                print("****************")
+                print("*****HOHOHOHHOHOHOHOH********")
+                
                 Alamofire.request(APIUrl, method: .put, parameters: self.put_param, encoding: JSONEncoding(options: []))
                     .responseJSON { response in
                         
+//                        print(response.result.value)
                         guard let object = response.result.value else {
                             return
                         }
@@ -127,7 +135,7 @@ class ViewController: UIViewController {
     }
     
     @objc func timerUpdate() {
-       // print("update")
+        // print("update")
         let APIUrl = urlStr + "walk/now?user_id=1"
         
         //var request = URLRequest(url: URL(string: APIUrl)!)
@@ -141,8 +149,8 @@ class ViewController: UIViewController {
                 }
                 
                 let json = JSON(object)
-                //print(json)
-    }
+                print(json)
+        }
     }
     
 }
