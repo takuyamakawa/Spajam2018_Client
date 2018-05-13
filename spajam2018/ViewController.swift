@@ -13,8 +13,21 @@ class ViewController: UIViewController {
     var flag = 0
     @IBOutlet weak var measureBtn: UIButton!
     
+    @IBOutlet weak var lastcount: UILabel!
+    @IBOutlet weak var nowcount: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let lastdata = "13"
+        lastcount.font = UIFont.systemFont(ofSize: 28)
+        lastcount.text = "前回：" + lastdata + "回"
+        lastcount.textAlignment = NSTextAlignment.center
+        
+        
+        nowcount.font = UIFont.systemFont(ofSize: 35)
+        nowcount.text = "計測待ち"
+        nowcount.textAlignment = NSTextAlignment.center
         
         measureBtn.setTitle("開始", for: .normal)
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,6 +42,7 @@ class ViewController: UIViewController {
         
         if flag == 0 {
             measureBtn.setImage(UIImage.init(named: "stop"), for: UIControlState.normal)
+            nowcount.text = "計測中"
             
             flag = 1
         } else {
