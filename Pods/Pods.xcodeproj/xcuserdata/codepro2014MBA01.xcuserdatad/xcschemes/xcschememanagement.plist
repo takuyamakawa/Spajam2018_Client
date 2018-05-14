@@ -4,30 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-spajam2018.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Pods-spajam2018Tests.xcscheme</key>
+		<key>Pods-spajam2018.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Pods-spajam2018UITests.xcscheme</key>
+		<key>Pods-spajam2018Tests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>ScrollableGraphView.xcscheme</key>
+		<key>Pods-spajam2018UITests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>SwiftyJSON.xcscheme</key>
+		<key>ScrollableGraphView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 </dict>

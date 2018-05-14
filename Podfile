@@ -6,6 +6,7 @@ target 'spajam2018' do
   use_frameworks!
 
   # Pods for spajam2018
+  pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'ScrollableGraphView'
 
